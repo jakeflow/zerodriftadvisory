@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════════
-   ZERO STANDING ADVISORY - MAIN JS
+   ZERO DRIFT ADVISORY - MAIN JS
    Navigation, smooth scroll, scroll-triggered animations
    ═══════════════════════════════════════════════════════════════ */
 
@@ -15,7 +15,6 @@
       var isOpen = links.classList.toggle('open');
       toggle.classList.toggle('open');
       toggle.setAttribute('aria-expanded', isOpen);
-      document.body.style.overflow = isOpen ? 'hidden' : '';
     });
 
     links.querySelectorAll('a').forEach(function(link) {
@@ -23,7 +22,6 @@
         links.classList.remove('open');
         toggle.classList.remove('open');
         toggle.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
       });
     });
 
@@ -32,7 +30,6 @@
         links.classList.remove('open');
         toggle.classList.remove('open');
         toggle.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
       }
     });
   }
