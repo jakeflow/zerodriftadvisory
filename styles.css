@@ -1,15 +1,15 @@
 /* ═══════════════════════════════════════════════════════════════
    ZERO DRIFT ADVISORY - BASE STYLES
    
-   Color Scheme:
-   - Deep navy (#0B1120)
-   - Slate blue (#4A6FA5)
-   - Warm white (#F0EDE6)
-   - Muted gold (#C9A96E)
+   Palette:
+   - Deep navy (#0B1120) - base background
+   - Slate blue (#4A6FA5) - primary accent
+   - Warm white (#F0EDE6) - text
+   - Muted gold (#C9A96E) - reserved accent
    
    Fonts:
-   - Lora (serif heading)
-   - Source Sans 3 (body)
+   - Lora (serif) - headings
+   - Source Sans 3 (sans) - body
    ═══════════════════════════════════════════════════════════════ */
 
 :root {
@@ -803,28 +803,26 @@ footer .footer-links a:hover { color: var(--text-muted); }
 @media (max-width: 768px) {
   nav {
     padding: 1rem 1.25rem;
+    position: sticky;
+    flex-wrap: wrap;
   }
   .nav-links {
     display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(11,17,32,0.97);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
+    flex-basis: 100%;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    z-index: 99;
+    gap: 0;
+    padding: 0.75rem 0 0.25rem;
+    border-top: 1px solid var(--border);
+    margin-top: 0.75rem;
   }
   .nav-links.open { display: flex; }
   .nav-links a {
-    font-size: 1.1rem;
-    letter-spacing: 0.1em;
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    padding: 0.65rem 0;
+    border-bottom: 1px solid var(--border);
   }
+  .nav-links a:last-child { border-bottom: none; }
   .nav-toggle { display: block; z-index: 101; }
 
   .hero { padding-top: 5rem; min-height: auto; padding-bottom: 3rem; }
