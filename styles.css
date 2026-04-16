@@ -1,15 +1,15 @@
 /* ═══════════════════════════════════════════════════════════════
    ZERO DRIFT ADVISORY - BASE STYLES
    
-   Color Psychology:
-   - Deep navy (#0B1120) = authority, stability, trust
-   - Slate blue (#4A6FA5) = professionalism, reliability  
-   - Warm white (#F0EDE6) = approachability, clarity
-   - Muted gold (#C9A96E) = quality, expertise (used sparingly)
+   Color Scheme:
+   - Deep navy (#0B1120)
+   - Slate blue (#4A6FA5)
+   - Warm white (#F0EDE6)
+   - Muted gold (#C9A96E)
    
-   Font Psychology:
-   - Lora (serif heading) = credibility, tradition, authority
-   - Source Sans 3 (body) = clarity, modernity, accessibility
+   Fonts:
+   - Lora (serif heading)
+   - Source Sans 3 (body)
    ═══════════════════════════════════════════════════════════════ */
 
 :root {
